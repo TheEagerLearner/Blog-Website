@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Changes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <%-include("header");-%>
+
+    <div class="container">
+
+
+      <div>
+
+        <h1>Blogs</h1>
+        <hr>
+        <br>
+    <% for(var i=posts.length-1;i>=0 ; i--){ %>
+        <div class="items">
+          <form  action="/delete" method="post">
+            <button class="delete" type="submit" name="btn" value="<%= posts[i]._id%>">D</button>
+          </form>
+          <form class="form-group" action="/update" method="post">
+            <button class="update" type="submit" name="upt" value="<%= posts[i]._id%>">U</button>
+
+          <input class="form-control head" type="text" name="head" value="<%= posts[i].heading %>">
+          <hr>
+            <textarea class="form-control" type="text" name="bod" ><%= posts[i].description %></textarea>
+              </form>
+        </div>
+
+        <br><br>
+      <% } %>
+      </div>
+    </div>
+
+  </body>
+</html>

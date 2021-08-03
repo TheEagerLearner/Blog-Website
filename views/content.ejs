@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>content</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+        <div class="container">
+    <%- include('header'); -%>
+
+
+<div class="form">
+
+
+<h1>Enter your content </h1>
+<hr>
+
+    <form class="form-group" action="/content" method="post">
+      <label for="title">Title</label>
+      <input class="form-control title" placeholder="Enter title" type="text" name="title" autocomplete="off">
+      <label for="description">Description</label>
+      <br>
+      <textarea name="description" class="form-control" placeholder="Enter description"></textarea>
+      <button  class="form-control sub" type="submit" name="submit">Submit</button>
+
+    </form>
+    </div>
+    
+  </div>
+  </body>
+</html>

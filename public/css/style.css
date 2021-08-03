@@ -1,0 +1,128 @@
+.items{
+
+  border:1px solid black;
+  padding: 5px;
+  box-shadow: 4px 4px;
+  padding-left: 30px;
+  padding-top: 10px
+
+}
+
+label{
+    margin-top: 40px;
+}
+
+.sub{
+    margin-top: 40px;
+}
+
+.form{
+  padding: 40px;
+  border:1px solid black;
+  box-shadow: 4px 4px;
+}
+
+.box{
+  margin:40px;
+  padding: 40px;
+  align-items: center;
+  border:1px solid black;
+  box-shadow: 4px 4px ;
+}
+.contact{
+
+  align-self: center;
+  margin-left: 30%;
+
+  border: 2px solid;
+  background-color: #fff;
+  box-shadow: 2px 2px 1px 1px;
+}
+
+.contact:hover{
+    box-shadow: 4px 4px 1px 1px;
+}
+
+@media (min-width: 600px) {
+  .contact{
+
+    align-self: center;
+    margin-left: 40%;
+
+    border: 2px solid;
+    background-color: #fff;
+    box-shadow: 2px 2px 1px 1px;
+  }
+
+
+}
+a{
+  text-decoration: none;
+
+}
+
+.sub{
+  height: 50px;
+  background-color: #fff;
+  border:3px solid black;
+  box-shadow: 6px 6px ;
+
+}
+
+.delete{
+float:right;
+margin: 10px;
+background-color:#fff;
+border:3px solid black;
+box-shadow: 2px 2px ;
+}
+.update{
+float:right;
+margin: 10px;
+background-color:#fff;
+border:3px solid black;
+box-shadow: 2px 2px ;
+}
+
+
+.update:hover{
+  border:3px solid black;
+  box-shadow: -2px -2px ;
+
+}
+
+.delete:hover{
+  border:3px solid black;
+  box-shadow: -2px -2px ;
+
+}
+
+.head{
+
+}
+.log{
+  position: relative;
+  text-align:center;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+}
+
+.login{
+
+  border:1px solid;
+  padding:10px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  box-shadow:4px 4px;
+  margin-left: 10px;
+  margin-right:10px;
+
+}
+
+.lol{
+  margin-top: 20vh;
+}
+
+.rofl{
+  padding:10px;
+}
